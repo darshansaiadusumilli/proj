@@ -33,6 +33,7 @@ AccountService accountService;
     @RequestMapping(value = "/accou",method = RequestMethod.POST)
 public Account createAccount(@Valid  @RequestBody Account account) {
   Account aco = accountService.createAccount(account);
+        System.out.println("done");
    return aco;
 
 }
